@@ -328,6 +328,74 @@
 	easy_heal_threshhold = 20 //Lower threshhold than true robotic limbs, but very low mindamage too.
 	threshhold_passed_mindamage = 5
 
+/obj/item/bodypart/l_arm/robot/bionic //Balance? Where we're going we don't NEED balance!
+	name = "bionic left arm"
+	desc = "An advanced artificial left arm, built to improve upon rather than simply replace a lost limb."
+	icon = 'icons/mob/augmentation/augments_bionics.dmi'
+	brute_reduction = 15
+	burn_reduction = 15
+	max_damage = 80
+	easy_heal_threshhold = -1
+	wound_resistance = 20
+
+/obj/item/bodypart/r_arm/robot/bionic //And by that I mean, ill balance this later. It shouldn't disrupt things too much as is, though.
+	name = "bionic right arm"
+	desc = "An advanced artificial right arm, built to improve upon rather than simply replace a lost limb."
+	icon = 'icons/mob/augmentation/augments_bionics.dmi'
+	brute_reduction = 15
+	burn_reduction = 15
+	max_damage = 80
+	easy_heal_threshhold = -1
+	wound_resistance = 20
+
+/obj/item/bodypart/l_leg/robot/bionic
+	name = "bionic left leg"
+	desc = "An advanced artificial left leg, built to improve upon rather than simply replace a lost limb."
+	icon = 'icons/mob/augmentation/augments_bionics.dmi'
+	brute_reduction = 15
+	burn_reduction = 15
+	max_damage = 80
+	easy_heal_threshhold = -1
+	wound_resistance = 20
+	var/speedup = -5
+
+/obj/item/bodypart/r_leg/robot/bionic
+	name = "bionic right leg"
+	desc = "An advanced artificial right leg, built to improve upon rather than simply replace a lost limb."
+	icon = 'icons/mob/augmentation/augments_bionics.dmi'
+	brute_reduction = 15
+	burn_reduction = 15
+	max_damage = 80
+	easy_heal_threshhold = -1
+	wound_resistance = 20
+	var/speedup = -5
+
+/obj/item/bodypart/chest/robot/bionic
+	name = "plasteel torso"
+	desc = "An advanced artificial torso built primarily with plasteel. It offers fantastic protection against conventional forms of damage, whilst silenced miniservos prevent it from weighing down the user."
+	icon = 'icons/mob/augmentation/augments_bionics.dmi'
+	brute_reduction = 20
+	burn_reduction = 20
+	max_damage = 80
+	easy_heal_threshhold = -1
+	wound_resistance = 20
+
+///Thank Bob for this, im a brainlet and can't read DM lmao
+/////// BEGIN BIONIC LEG AND BODY PART SPEED MODIFICATION AND OTHER MISC. BULLSHIT //////
+/datum/movespeed_modifier/bionicleg_standard
+
+/obj/item/bodypart/l_leg/bionic/attach_limb(mob/living/carbon/C, special)
+	. = ..()
+	var/speedup = -5 //I cannot be assed to do this a different way. Fuck you. I've been at this for an hour.
+	C.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/bionicleg_standard, update = TRUE, multiplicative_slowdown = speedup)
+
+/obj/item/bodypart/r_leg/bionic/attach_limb(mob/living/carbon/C, special)
+	. = ..()
+	var/speedup = -5 //I cannot be assed to do this a different way. Fuck you. I've been at this for an hour.
+	C.add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/bionicleg_standard, update = TRUE, multiplicative_slowdown = speedup)
+
+/////// END SHITTENFARTEN AND SUCH. THANK YOU AGAIN BOB FOR MAKING MY LIFE EASIER ///////
+
 #undef ROBOTIC_LIGHT_BRUTE_MSG
 #undef ROBOTIC_MEDIUM_BRUTE_MSG
 #undef ROBOTIC_HEAVY_BRUTE_MSG

@@ -311,6 +311,9 @@ GLOBAL_LIST_INIT(greyscale_limb_types, list("human","moth","lizard","pod","plant
 //body ids that have prosthetic sprites
 GLOBAL_LIST_INIT(prosthetic_limb_types, list("xion","bishop","cybersolutions","grayson","hephaestus","nanotrasen","talon"))
 
+//Body ids that have Bionic sprites
+GLOBAL_LIST_INIT(bionic_limb_types, list("Gamma"))
+
 //FAMILY HEIRLOOM LIST
 //this works by using the first number for the species as a probability to choose one of the items in the following list for their family heirloom
 //if the probability fails, or the species simply isn't in the list, then it defaults to the next global list, which has its own list of items for each job
