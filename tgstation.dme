@@ -1106,6 +1106,7 @@
 #include "code\game\objects\items\shields.dm"
 #include "code\game\objects\items\shooting_range.dm"
 #include "code\game\objects\items\shrapnel.dm"
+#include "code\game\objects\items\shroud_pacts.dm"
 #include "code\game\objects\items\signs.dm"
 #include "code\game\objects\items\singularityhammer.dm"
 #include "code\game\objects\items\spear.dm"
