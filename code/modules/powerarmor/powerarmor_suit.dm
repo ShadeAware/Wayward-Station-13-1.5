@@ -80,7 +80,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/powerarmor/equipped(mob/user, slot)
 	. = ..()
-	playsound(src, 'sound/effect/powerarmor_online.ogg', 60, 1)
+	playsound(src, 'sound/effects/powerarmor_online.ogg', 60, 1)
 	if(ishuman(user) && slot == SLOT_WEAR_SUIT)
 		var/mob/living/carbon/human/H = user
 		if(!istype(H.shoes, /obj/item/clothing/shoes/powerarmor_shoes))
@@ -121,7 +121,7 @@
 		var/datum/atom_hud/DHUD = GLOB.huds[DATA_HUD_MEDICAL_ADVANCED]
 		DHUD.remove_hud_from(user)
 
-/obj/item/clothing/shoes/powerarmor_shoes/
+/obj/item/clothing/shoes/powerarmor_shoes
 	name = "power armor boots"
 	desc = "A pair of high-tech combat boots. Excellent for running and even better for smashing skulls."
 	icon_state = "s-pa"
@@ -139,7 +139,7 @@
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, NINJA_SUIT_TRAIT)
 
-/obj/item/clothing/gloves/powerarmor_gloves/
+/obj/item/clothing/gloves/powerarmor_gloves
 	desc = "These nano-enhanced gloves insulate from electricity and provide fire resistance."
 	name = "powerarmor gloves"
 	icon_state = "s-pa"

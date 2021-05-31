@@ -6,7 +6,7 @@
 
 
 //APC//
-/obj/machinery/power/apc/powerarmor_drainact(obj/item/clothing/suit/space/hardsuit/powerarmor/S, mob/living/carbon/human/H, /obj/item/clothing/gloves/powerarmor_gloves/G)
+/obj/machinery/power/apc/powerarmor_drainact(obj/item/clothing/suit/space/hardsuit/powerarmor/S, mob/living/carbon/human/H, obj/item/clothing/gloves/powerarmor_gloves/G)
 	if(!S || !H || !G)
 		return INVALID_DRAIN
 
@@ -43,7 +43,7 @@
 
 
 //SMES//
-/obj/machinery/power/smes/powerarmor_drainact(obj/item/clothing/suit/space/hardsuit/powerarmor/S, mob/living/carbon/human/H, /obj/item/clothing/gloves/powerarmor_gloves/G)
+/obj/machinery/power/smes/powerarmor_drainact(obj/item/clothing/suit/space/hardsuit/powerarmor/S, mob/living/carbon/human/H, obj/item/clothing/gloves/powerarmor_gloves/G)
 	if(!S || !H || !G)
 		return INVALID_DRAIN
 
@@ -78,7 +78,7 @@
 
 
 //CELL//
-/obj/item/stock_parts/cell/powerarmor_drainact(obj/item/clothing/suit/space/hardsuit/powerarmor/S, mob/living/carbon/human/H, /obj/item/clothing/gloves/powerarmor_gloves/G)
+/obj/item/stock_parts/cell/powerarmor_drainact(obj/item/clothing/suit/space/hardsuit/powerarmor/S, mob/living/carbon/human/H, obj/item/clothing/gloves/powerarmor_gloves/G)
 	if(!S || !H || !G)
 		return INVALID_DRAIN
 
@@ -99,7 +99,7 @@
 
 
 //WIRE//
-/obj/structure/cable/powerarmor_drainact(obj/item/clothing/suit/space/hardsuit/powerarmor/S, mob/living/carbon/human/H, /obj/item/clothing/gloves/powerarmor_gloves/G)
+/obj/structure/cable/powerarmor_drainact(obj/item/clothing/suit/space/hardsuit/powerarmor/S, mob/living/carbon/human/H, obj/item/clothing/gloves/powerarmor_gloves/G)
 	if(!S || !H || !G)
 		return INVALID_DRAIN
 
@@ -135,7 +135,7 @@
 		S.spark_system.start()
 
 //MECH//
-/obj/mecha/powerarmor_drainact(obj/item/clothing/suit/space/hardsuit/powerarmor/S, mob/living/carbon/human/H, /obj/item/clothing/gloves/powerarmor_gloves/G)
+/obj/mecha/powerarmor_drainact(obj/item/clothing/suit/space/hardsuit/powerarmor/S, mob/living/carbon/human/H, obj/item/clothing/gloves/powerarmor_gloves/G)
 	if(!S || !H || !G)
 		return INVALID_DRAIN
 
@@ -162,7 +162,7 @@
 				break
 
 //BORG//
-/mob/living/silicon/robot/powerarmor_drainact(obj/item/clothing/suit/space/hardsuit/powerarmor/S, mob/living/carbon/human/H, /obj/item/clothing/gloves/powerarmor_gloves/G)
+/mob/living/silicon/robot/powerarmor_drainact(obj/item/clothing/suit/space/hardsuit/powerarmor/S, mob/living/carbon/human/H, obj/item/clothing/gloves/powerarmor_gloves/G)
 	if(!S || !H || !G)
 		return INVALID_DRAIN
 
@@ -191,7 +191,7 @@
 
 
 //CARBON MOBS//
-/mob/living/carbon/powerarmor_drainact(obj/item/clothing/suit/space/hardsuit/powerarmor/S, mob/living/carbon/human/H, /obj/item/clothing/gloves/powerarmor_gloves/G)
+/mob/living/carbon/powerarmor_drainact(obj/item/clothing/suit/space/hardsuit/powerarmor/S, mob/living/carbon/human/H, obj/item/clothing/gloves/powerarmor_gloves/G)
 	if(!S || !H || !G)
 		return INVALID_DRAIN
 
